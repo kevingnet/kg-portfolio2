@@ -1,0 +1,158 @@
+.sub-hero {
+  padding-block: clamp(3rem, 7vw, 6.25rem);
+}
+
+.sub-hero--split,
+.sub-feature {
+  display: grid;
+  grid-template-columns: minmax(0, .94fr) minmax(0, 1.06fr);
+  align-items: center;
+  gap: clamp(1.75rem, 5vw, 5rem);
+}
+
+.sub-hero__body { min-width: 0; }
+.sub-hero__body .eyebrow,
+.sub-feature__body .eyebrow,
+.sub-library__feature .eyebrow,
+.sub-library__row .eyebrow { margin: 0 0 .65rem; }
+
+.sub-hero h1 {
+  max-width: 14ch;
+  margin: 0;
+  font: 500 clamp(2.7rem, 6.2vw, 5.5rem)/1.02 var(--serif);
+  letter-spacing: -.055em;
+  text-wrap: balance;
+}
+
+.sub-hero--plain h1 { max-width: 21ch; }
+.sub-lead {
+  max-width: 53ch;
+  margin: 1.4rem 0 0;
+  font-size: clamp(1rem, 1.7vw, 1.19rem);
+  line-height: 1.6;
+  color: var(--muted);
+}
+.sub-hero__body > .button { margin-top: 1.55rem; }
+.sub-hero__photo,
+.sub-feature__shot { margin: 0; }
+.sub-hero__photo img,
+.sub-feature__shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.sub-hero__photo img { border-radius: .35rem; }
+.sub-section-head {
+  padding: 1.1rem 0;
+  border-bottom: 1px solid var(--line);
+}
+.sub-section-head h2,
+.sub-contact h2,
+.sub-feature h2 {
+  margin: 0;
+  font: 500 clamp(1.75rem, 3.5vw, 3.2rem)/1.08 var(--serif);
+  letter-spacing: -.035em;
+  text-wrap: balance;
+}
+.sub-practice__row,
+.sub-library__row {
+  display: grid;
+  align-items: start;
+  padding-block: clamp(1.5rem, 4.2vw, 3rem);
+  border-bottom: 1px solid var(--line);
+}
+.sub-practice__row {
+  gap: 1rem clamp(1.5rem, 5vw, 5rem);
+  grid-template-columns: minmax(0, 1.65fr) minmax(0, 1fr);
+}
+.sub-practice h3,
+.sub-library h3 {
+  margin: 0;
+  font: 500 clamp(1.35rem, 2.4vw, 2.05rem)/1.14 var(--serif);
+  letter-spacing: -.025em;
+}
+.sub-practice__row p,
+.sub-feature__body > p:not(.eyebrow),
+.sub-library__feature div > p:not(.eyebrow) {
+  max-width: 60ch;
+  margin: .7rem 0 1rem;
+  line-height: 1.65;
+  color: var(--muted);
+}
+.sub-practice__row ul {
+  margin: 0;
+  padding: 0 0 0 1.2rem;
+  color: var(--muted);
+  line-height: 1.55;
+}
+.sub-practice__row li + li { margin-top: .38rem; }
+.sub-contact { padding-block: clamp(2.6rem, 6.5vw, 5.2rem); }
+.sub-contact__inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+  gap: 1.5rem clamp(1.25rem, 4vw, 4rem);
+  align-items: center;
+  padding: clamp(1.25rem, 4vw, 3rem);
+  background: color-mix(in srgb, var(--accent) 7%, var(--paper));
+  border-radius: .35rem;
+}
+.sub-contact h2 { max-width: 18ch; }
+.sub-contact p { margin: .7rem 0 1.2rem; line-height: 1.6; }
+.sub-contact img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: .2rem;
+}
+.sub-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: .4rem 1.1rem;
+}
+.sub-feature {
+  padding-block: clamp(1.5rem, 4vw, 3.3rem);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.sub-feature__shot img { border: 1px solid var(--line); border-radius: .35rem; }
+.sub-library { padding-block: clamp(2rem, 6vw, 4.75rem); }
+.sub-library__feature {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.08fr);
+  gap: 1.1rem clamp(1.5rem, 5vw, 4.5rem);
+  align-items: center;
+  padding-block: clamp(1.4rem, 4vw, 2.6rem);
+  border-bottom: 1px solid var(--line);
+}
+.sub-library__feature img {
+  display: block;
+  width: 100%;
+  max-height: 20rem;
+  height: auto;
+  object-fit: cover;
+  border-radius: .32rem;
+}
+.sub-library__row {
+  grid-template-columns: minmax(0, 1.03fr) minmax(0, 1fr) minmax(8.5rem, auto);
+  gap: .5rem clamp(1.2rem, 3vw, 3rem);
+  padding-block: clamp(1.2rem, 2.6vw, 1.9rem);
+}
+.sub-library__row > p { margin: 0; color: var(--muted); line-height: 1.6; }
+
+@media (max-width: 770px) {
+  .sub-hero--split,
+  .sub-feature,
+  .sub-library__feature,
+  .sub-contact__inner { grid-template-columns: minmax(0, 1fr); }
+  .sub-hero h1 { max-width: 15ch; }
+  .sub-hero__photo img { aspect-ratio: 16 / 10; object-fit: cover; }
+  .sub-library__row { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+  .sub-library__row > :last-child { grid-column: 1 / -1; }
+}
+@media (max-width: 525px) {
+  .sub-practice__row,
+  .sub-library__row { grid-template-columns: minmax(0, 1fr); }
+  .sub-library__row .eyebrow { margin-bottom: .35rem; }
+  .sub-contact__inner { gap: 1rem; }
+}

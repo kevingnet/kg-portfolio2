@@ -1,0 +1,211 @@
+.selected-work .work-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(15rem, 0.75fr);
+  align-items: end;
+  gap: 1rem 3rem;
+  padding-block: clamp(2.75rem, 7vw, 5.5rem) 1.75rem;
+}
+
+.selected-work .work-intro h1 {
+  margin: 0;
+  font-size: clamp(3.5rem, 9vw, 7.5rem);
+  line-height: 0.98;
+  letter-spacing: -0.055em;
+}
+
+.selected-work .work-intro > p {
+  max-width: 38ch;
+  margin: 0;
+  color: var(--muted);
+  font-size: clamp(1rem, 1.8vw, 1.3rem);
+  line-height: 1.5;
+}
+
+.selected-work .work-jump ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 0 1.5rem;
+  border-block: 1px solid var(--line);
+}
+
+.selected-work .work-jump a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.selected-work .work-case {
+  scroll-margin-top: 7rem;
+}
+
+.selected-work .work-case--featured {
+  padding-block: clamp(2rem, 4.7vw, 4rem);
+}
+
+.selected-work .work-feature {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.25fr);
+  gap: clamp(1.5rem, 4vw, 3.75rem);
+  align-items: center;
+}
+
+.selected-work .work-feature h2,
+.selected-work .work-story h2,
+.selected-work .work-more h2 {
+  margin: 0 0 0.45rem;
+  font-size: clamp(2.05rem, 4.4vw, 3.8rem);
+  line-height: 1.02;
+  letter-spacing: -0.04em;
+}
+
+.selected-work .work-story h2 {
+  font-size: clamp(1.95rem, 3.8vw, 3rem);
+}
+
+.selected-work .work-role {
+  margin: 0 0 1.15rem;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.selected-work .work-feature-copy > p:not(.eyebrow, .work-role),
+.selected-work .work-story > p:not(.work-role) {
+  max-width: 68ch;
+  margin: 0 0 0.95rem;
+}
+
+.selected-work .work-feature-metrics {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 1rem;
+  margin: 1.45rem 0;
+  padding: 0;
+}
+
+.selected-work .work-feature-metrics > div {
+  display: flex;
+  flex-direction: column;
+  padding-top: 0.85rem;
+  border-top: 1px solid var(--line);
+}
+
+.selected-work .work-feature-metrics dt,
+.selected-work .work-outcome > p:last-child,
+.selected-work .work-figure figcaption {
+  color: var(--muted);
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+
+.selected-work .work-feature-metrics dd,
+.selected-work .work-metric {
+  color: var(--accent);
+  font-family: var(--serif);
+  font-size: clamp(2rem, 5vw, 3rem);
+  letter-spacing: -0.05em;
+  line-height: 1.15;
+  margin: 0 0 0.3rem;
+}
+
+.selected-work .work-feature-metrics dd {
+  order: -1;
+}
+
+.selected-work .work-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1rem;
+}
+
+.selected-work .work-figure {
+  margin: 0;
+}
+
+.selected-work .work-figure a {
+  display: block;
+  background: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: 0.65rem;
+  overflow: hidden;
+}
+
+.selected-work .work-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.selected-work .work-figure figcaption {
+  padding-top: 0.65rem;
+}
+
+.selected-work .work-feature-notes {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem clamp(1.5rem, 4vw, 3rem);
+  margin-top: clamp(2rem, 5.5vw, 4rem);
+  padding-block: 1.25rem;
+  border-block: 1px solid var(--line);
+}
+
+.selected-work .work-feature-notes h3 {
+  margin: 0 0 0.35rem;
+  font-size: 1.35rem;
+}
+
+.selected-work .work-feature-notes p,
+.selected-work .work-more p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.selected-work .work-case--study {
+  display: grid;
+  grid-template-columns: minmax(10rem, 0.37fr) minmax(0, 1fr);
+  gap: 1.25rem 3rem;
+  padding-block: clamp(2rem, 5vw, 3.5rem);
+  border-top: 1px solid var(--line);
+}
+
+.selected-work .work-case--study:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.selected-work .work-metric {
+  font-size: clamp(2.5rem, 7vw, 4.5rem);
+}
+
+.selected-work .work-more {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem 1.5rem;
+  border-top: 1px solid var(--line);
+  padding-block: 2rem 3rem;
+}
+
+.selected-work .work-more h2 {
+  font-size: clamp(1.6rem, 3.5vw, 2.3rem);
+}
+
+@media (max-width: 760px) {
+  .selected-work .work-intro,
+  .selected-work .work-feature,
+  .selected-work .work-feature-notes,
+  .selected-work .work-case--study {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .selected-work .work-figure {
+    max-width: 38rem;
+  }
+}

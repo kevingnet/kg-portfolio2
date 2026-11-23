@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OpenTV Projects | Kevin Guerra Portfolio</title>
+  <meta name="description" content="Software expert at OpenTV / Nagra (2013–2014): a ~1M-line cable-industry platform (C++, C#, Oracle) and a set-top closed-captioning redesign.">
+  <link rel="canonical" href="https://kevingnet.github.io/kg-portfolio2/projects/opentv.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Kevin Guerra Portfolio">
+  <meta property="og:title" content="OpenTV Projects | Kevin Guerra Portfolio">
+  <meta property="og:description" content="Software expert at OpenTV / Nagra (2013–2014): a ~1M-line cable-industry platform (C++, C#, Oracle) and a set-top closed-captioning redesign.">
+  <meta property="og:url" content="https://kevingnet.github.io/kg-portfolio2/projects/opentv.html">
+  <meta property="og:image" content="https://kevingnet.github.io/kg-portfolio2/assets/images/profile.png?v=tips2">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="OpenTV Projects | Kevin Guerra Portfolio">
+  <meta name="twitter:description" content="Software expert at OpenTV / Nagra (2013–2014): a ~1M-line cable-industry platform (C++, C#, Oracle) and a set-top closed-captioning redesign.">
+  <meta name="twitter:image" content="https://kevingnet.github.io/kg-portfolio2/assets/images/profile.png?v=tips2">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#0e1014">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/portfolio-v2.css">
+</head>
+<body class="v2-archive">
+  <a class="skip-to-main" href="#main-content">Skip to content</a>
+  <header class="v2-header">
+    <div class="wrap v2-header__bar">
+      <a class="v2-brand" href="../index.html"><span class="v2-monogram" aria-hidden="true">KG</span> Kevin Guerra</a>
+      <nav class="v2-nav" aria-label="Primary navigation">
+        <a href="../case-studies.html">Work</a>
+        <a href="../services.html">Services</a>
+        <a href="../samples.html">Samples</a>
+        <a href="../resume.html">Résumé</a>
+        <a href="../about.html">About</a>
+        <a class="v2-nav-contact" href="../index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main-content">
+    <a href="../index.html" class="back-link">&larr; Back to Portfolio</a>
+    <h1 class="page-title">OpenTV Projects</h1>
+    <div class="content-section">
+<p><strong>Dynamic Scheduler:</strong> Resolved Issues and Enhanced Win32 C# App, used for Local Advertisement Scheduling</p>
+      <div class="tech-tags"><strong>Technologies</strong><div class="skill-row"><span class="skill-chip">C#</span><span class="skill-chip">C/C++</span><span class="skill-chip">Python</span><span class="skill-chip">Perl</span><span class="skill-chip">Oracle</span><span class="skill-chip">Big Data Import</span><span class="skill-chip">Win32</span><span class="skill-chip">Scheduling</span><span class="skill-chip">Web Services</span><span class="skill-chip">SOAP</span><span class="skill-chip">SQL</span><span class="skill-chip">Stored Procedures</span><span class="skill-chip">IIS</span><span class="skill-chip">MVC</span><span class="skill-chip">.NET</span><span class="skill-chip">XML</span></div></div>
+<h2>Work Performed</h2>
+<p>Developed software enhancements and bug fixes for application used by major cable companies worldwide. The application was very complex containing over a million lines of code.</p>
+      <section class="archive-showcase">
+      <h2>From the project archive</h2>
+      <p class="archive-lead">The original project archive holds 3 source files (C++) and 1 note. They are not published here because they belong to OpenTV; I&rsquo;m happy to walk through the design and code in an interview.</p>
+      </section>
+      <h2>Development archive analysis</h2>
+      <p class="compilation-lead"><em>From exhaustive archive review — OpenTV — TV Ad Scheduling</em></p>
+      <p><strong>Purpose:</strong> Dynamic scheduling of TV advertising spots into breaks — placement, inventory, manual overrides, customer separation.</p>
+<p><strong>Structure:</strong></p>
+<pre class="compilation-tree"><code>OpenTV/
+├── DynSchLib/                 VS6 static library (.dsp)
+│   ├── Core2/                 Refactored scheduler (SchedulingCore2, BLLService multiton)
+│   ├── SchedulingCore.*       Legacy core
+│   └── BreakList*, ScheduleGroup*, Finalize*, AllocateInventory*
+└── bk/                        Backup Core2 work-in-progress</code></pre>
+<p><strong>Technologies:</strong> C++ VS6, STL, template .inl, FSM (GroupFSM)</p>
+<p><strong>Patterns:</strong> Multiton BLLService per order line; priority queue spot ordering; conditional DB persistence</p>
+    </div>
+  </main>
+  <footer class="v2-footer">
+    <div class="wrap v2-footer__bar">
+      <span>© 2026 Kevin Alexander Guerra</span>
+      <nav aria-label="Footer links">
+        <a href="https://github.com/kevingnet">GitHub</a>
+        <a href="https://www.linkedin.com/in/kevin-guerra-36151446/">LinkedIn</a>
+        <a href="../about.html#experience">Career archive</a>
+      </nav>
+    </div>
+  </footer>
+  <script src="../js/site.js"></script>
+</body>
+</html>

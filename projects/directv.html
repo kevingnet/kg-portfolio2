@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DirecTV Projects | Kevin Guerra Portfolio</title>
+  <meta name="description" content="Contract work for DirecTV (2007–2012): infrared automation and an OCR test system for set-top boxes, in C++ and Perl.">
+  <link rel="canonical" href="https://kevingnet.github.io/kg-portfolio2/projects/directv.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Kevin Guerra Portfolio">
+  <meta property="og:title" content="DirecTV Projects | Kevin Guerra Portfolio">
+  <meta property="og:description" content="Contract work for DirecTV (2007–2012): infrared automation and an OCR test system for set-top boxes, in C++ and Perl.">
+  <meta property="og:url" content="https://kevingnet.github.io/kg-portfolio2/projects/directv.html">
+  <meta property="og:image" content="https://kevingnet.github.io/kg-portfolio2/assets/images/profile.png?v=tips2">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="DirecTV Projects | Kevin Guerra Portfolio">
+  <meta name="twitter:description" content="Contract work for DirecTV (2007–2012): infrared automation and an OCR test system for set-top boxes, in C++ and Perl.">
+  <meta name="twitter:image" content="https://kevingnet.github.io/kg-portfolio2/assets/images/profile.png?v=tips2">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#0e1014">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/portfolio-v2.css">
+</head>
+<body class="v2-archive">
+  <a class="skip-to-main" href="#main-content">Skip to content</a>
+  <header class="v2-header">
+    <div class="wrap v2-header__bar">
+      <a class="v2-brand" href="../index.html"><span class="v2-monogram" aria-hidden="true">KG</span> Kevin Guerra</a>
+      <nav class="v2-nav" aria-label="Primary navigation">
+        <a href="../case-studies.html">Work</a>
+        <a href="../services.html">Services</a>
+        <a href="../samples.html">Samples</a>
+        <a href="../resume.html">Résumé</a>
+        <a href="../about.html">About</a>
+        <a class="v2-nav-contact" href="../index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main-content">
+    <a href="../index.html" class="back-link">&larr; Back to Portfolio</a>
+    <h1 class="page-title">DirecTV Projects</h1>
+    <div class="content-section">
+<p><strong>Contract consulting</strong> · 2007 – 2012</p>
+<ul>
+<li>redrat_scripter: red rat code for infrared transceiver, usb, perl client that reads scripts and sends commands to server that uses sockets</li>
+<li>redrat_blaster: used in server farm to blast with random IR messages to discover software errors</li>
+<li>USB Device Driver: Modified to minimize memory usage and avoid excess of object recreation</li>
+<li>ScreenCapture Control: ActiveX control to capture screens using various devices, creates images</li>
+<li>Image Processing Code: binarize images, crop selected window</li>
+<li>ScreenReader: Perform OCR on selected window</li>
+<li>ScreenScraper: Perform OCR on a whole screen</li>
+<li>AbbyReader OCR Instrumentation System, used by Server</li>
+<li>OCR Server: Uses Abby Reader System, receives an image as input, performs OCR on it and returns text to the client, over TCP/IP Network.</li>
+<li>OCR Server Tester: Performs various tests on the server.</li>
+<li>OCR Client: Takes video screen shots with ScreenCapture, does some image processing, including adapted FFT algorithm, binarizes image, sends image to server, receives text, client is instrumented via javascript, usually from Test Director Web App.</li>
+<li>OCR Client Blaster: Performance tester for OCR System.</li>
+</ul>
+      <div class="tech-tags"><strong>Technologies</strong><div class="skill-row"><span class="skill-chip">C/C++</span><span class="skill-chip">JavaScript</span><span class="skill-chip">Perl</span><span class="skill-chip">ACE Framework</span><span class="skill-chip">ActiveX</span><span class="skill-chip">COM</span><span class="skill-chip">Win32</span><span class="skill-chip">USB Device Driver Development</span><span class="skill-chip">OCR</span><span class="skill-chip">Machine Vision</span><span class="skill-chip">Image Processing</span><span class="skill-chip">FFT</span><span class="skill-chip">Fast (Discrete) Fourier Transform</span><span class="skill-chip">Heuristics Methods for Machine Vision</span><span class="skill-chip">Image Database Retrieval System using above and FFT</span><span class="skill-chip">Image Binarization</span></div></div>
+<h2>Work Performed</h2>
+<p>Envisioned, promoted, architected, designed and developed software infrastructure for Automation system in C++, ActiveX, COM and Win32. The Client/Server system uses ACE Framework design and architecture patterns and drives video capture devices to acquire and process images, perform OCR and recognition of other artifacts using the Fast Fourier Transform algorithm and other methods in Machine Vision.</p>
+<p>Invented algorithms using kernel methods and decision trees for analysis of image data and comparison for recognition. This was done in an incredible short time working independently, this took one month of research and implementation.</p>
+<p>Envisioned, promoted, designed and developed Linux Socket C++ Server and Perl Client script processing Automation application for driving libusb based RedRat infrared Transceiver concurrent multiple devices. A RedRat is a device that can read and replicate remote control signals. ANSI C, C++, OOP, Patterns, Image Processing, JavaScript, Test Director, Visual Studio, DirectX, USB Devices.</p>
+<p>Applications and ActiveX controls were used from Test Directors and instrumented using javascript.</p>
+      <section class="archive-showcase">
+      <h2>From the project archive</h2>
+      <p class="archive-lead">The original project archive holds 10 source files (C++, C) and 5 notes. They are not published here because they belong to DirecTV; I&rsquo;m happy to walk through the design and code in an interview.</p>
+      <h3 class="archive-shots-heading">Screenshots</h3>
+      <figure class="archive-figure">
+        <div class="archive-figure__frame"><img src="../assets/archive/directv/images/img_009.webp" alt="DirecTV — img_009.bmp" loading="lazy" decoding="async"></div>
+        <figcaption class="archive-figure__caption"><span class="archive-filename">img_009.bmp</span><span class="archive-path">img_009.bmp</span></figcaption>
+      </figure>
+      <figure class="archive-figure">
+        <div class="archive-figure__frame"><img src="../assets/archive/directv/images/img_000.webp" alt="DirecTV — img_000.bmp" loading="lazy" decoding="async"></div>
+        <figcaption class="archive-figure__caption"><span class="archive-filename">img_000.bmp</span><span class="archive-path">img_000.bmp</span></figcaption>
+      </figure>
+      <figure class="archive-figure">
+        <div class="archive-figure__frame"><img src="../assets/archive/directv/images/img_012.webp" alt="DirecTV — img_012.bmp" loading="lazy" decoding="async"></div>
+        <figcaption class="archive-figure__caption"><span class="archive-filename">img_012.bmp</span><span class="archive-path">img_012.bmp</span></figcaption>
+      </figure>
+      <figure class="archive-figure">
+        <div class="archive-figure__frame"><img src="../assets/archive/directv/images/img_013.webp" alt="DirecTV — img_013.bmp" loading="lazy" decoding="async"></div>
+        <figcaption class="archive-figure__caption"><span class="archive-filename">img_013.bmp</span><span class="archive-path">img_013.bmp</span></figcaption>
+      </figure>
+      <figure class="archive-figure">
+        <div class="archive-figure__frame"><img src="../assets/archive/directv/images/lirc.gif" alt="DirecTV — lirc.gif" loading="lazy" decoding="async"></div>
+        <figcaption class="archive-figure__caption"><span class="archive-filename">lirc.gif</span><span class="archive-path">lirc.gif</span></figcaption>
+      </figure>
+      </section>
+    </div>
+    <nav class="project-pager" aria-label="More employers">
+      <a class="project-pager__link project-pager__prev" href="spirent.html"><span>&larr; Previous</span>Spirent</a>
+      <a class="project-pager__link project-pager__next" href="guidance.html"><span>Next &rarr;</span>Guidance Software</a>
+    </nav>
+    <section class="project-cta">
+      <p>Interested in working together?</p>
+      <div class="project-cta__actions">
+        <a class="btn btn-primary" href="../assets/Kevin-Guerra.pdf">Download Resume</a>
+        <a class="btn btn-secondary" href="mailto:kevingnet1@gmail.com">Get in Touch</a>
+        <a class="btn btn-secondary" href="../case-studies.html">Case Studies</a>
+      </div>
+    </section>
+  </main>
+  <footer class="v2-footer">
+    <div class="wrap v2-footer__bar">
+      <span>© 2026 Kevin Alexander Guerra</span>
+      <nav aria-label="Footer links">
+        <a href="https://github.com/kevingnet">GitHub</a>
+        <a href="https://www.linkedin.com/in/kevin-guerra-36151446/">LinkedIn</a>
+        <a href="../about.html#experience">Career archive</a>
+      </nav>
+    </div>
+  </footer>
+  <script src="../js/site.js"></script>
+</body>
+</html>
