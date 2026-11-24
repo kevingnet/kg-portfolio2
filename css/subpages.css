@@ -196,3 +196,6 @@
 .samples-hero { grid-template-columns: minmax(0, 1fr); }
 .samples-hero__image { width: 100%; }
 .samples-hero__image img { width: 100%; height: auto; max-height: none; object-fit: initial; }
+
+/* Keep every project image and card consistent, including Magazine. */
+.sub-library__row .restored-sample { height: auto; aspect-ratio: 16 / 9; object-fit: cover; }
