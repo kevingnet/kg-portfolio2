@@ -191,3 +191,8 @@
 /* Larger service illustrations */
 .restored-services__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 @media (max-width: 525px) { .restored-services__grid { grid-template-columns: 1fr; } }
+
+/* Show the samples artwork at its full width and natural proportions. */
+.samples-hero { grid-template-columns: minmax(0, 1fr); }
+.samples-hero__image { width: 100%; }
+.samples-hero__image img { width: 100%; height: auto; max-height: none; object-fit: initial; }
