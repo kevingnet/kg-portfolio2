@@ -201,3 +201,5 @@
 .sub-library__row .restored-sample { height: auto; aspect-ratio: 16 / 9; object-fit: cover; }
 
 .sub-library__list { grid-auto-rows: 1fr; }
+
+.sub-contact__inner--text { grid-template-columns: 1fr; }
