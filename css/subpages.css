@@ -187,3 +187,7 @@
   .restored-services__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .75rem; }
   .restored-services__grid figcaption { padding: .7rem; font-size: .9rem; }
 }
+
+/* Larger service illustrations */
+.restored-services__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (max-width: 525px) { .restored-services__grid { grid-template-columns: 1fr; } }
