@@ -199,3 +199,5 @@
 
 /* Keep every project image and card consistent, including Magazine. */
 .sub-library__row .restored-sample { height: auto; aspect-ratio: 16 / 9; object-fit: cover; }
+
+.sub-library__list { grid-auto-rows: 1fr; }
