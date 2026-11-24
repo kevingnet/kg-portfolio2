@@ -139,3 +139,12 @@ body { margin: 0; background: var(--paper); color: var(--ink); font: 1rem/1.62 v
 .company-section .v2-career-list { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 @media(max-width:900px) { .company-section .v2-career-list { grid-template-columns: repeat(2, minmax(0,1fr)); } }
 @media(max-width:530px) { .company-section .v2-career-list { grid-template-columns: 1fr; } }
+
+/* Career timeline carousel */
+.logo-carousel { position: relative; overflow: hidden; border-block: 1px solid var(--line); background: var(--surface); padding: .75rem 0; }
+.logo-carousel-track { display: flex; align-items: center; gap: 1.25rem; width: max-content; padding: 0 1rem; will-change: transform; }
+.logo-carousel-link { display: block; flex: 0 0 auto; line-height: 0; border-radius: .25rem; }
+.logo-carousel-track img { display: block; height: 144px; width: auto; max-width: 320px; object-fit: contain; border-radius: .25rem; }
+.logo-carousel-link:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+.logo-carousel-toggle { position: absolute; right: .75rem; bottom: .65rem; z-index: 1; display: grid; place-items: center; width: 2.75rem; height: 2.75rem; border: 1px solid var(--line); border-radius: 50%; background: var(--surface); color: var(--ink); cursor: pointer; font-size: 1rem; }
+@media (max-width: 530px) { .logo-carousel-track img { height: 144px; max-width: 280px; } }
